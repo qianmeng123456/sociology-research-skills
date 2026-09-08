@@ -1,0 +1,222 @@
+[
+  {
+    "name": "questionnaire-design-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/wrangling/questionnaire-design-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "74ca8baa9a6841eddf85dc455d9a4315d5a9294698a64cc950a47df31359a0e0",
+    "entry_sha256": "bb69b13040d581167a4b2b75db3d1df94b041c61b73fe80451787b176628fcc2",
+    "license": "MIT (upstream)",
+    "local_path": "skills/questionnaire-design-guide",
+    "correction": "不固定每构念加入 2–3 道反向题；反向措辞可能引入方法因子。30–50 人不等于足够完成因子分析。α 不是单维性或效度证明，不以提高 α 为唯一删题目标；因子数结合理论、平行分析和碎石图。相关系数的固定阈值不能普遍证明聚合或区分效度。不按缺失比例自动删除或均值插补。"
+  },
+  {
+    "name": "survey-data-processing",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/wrangling/survey-data-processing/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "f3a47d1d75d4d33f114e95e87ab4a547abb07abe874c25a6cf803382476bc280",
+    "entry_sha256": "281dadaa5b4ae2da23c0bd17b7ee78cea02bed01fe4ac9df12151cec6afd7083",
+    "license": "MIT (upstream)",
+    "local_path": "skills/survey-data-processing",
+    "correction": "不把 60 秒、90% 直线作答或一次注意力题失败作为通用删除门槛。上游均值/和分代码没有充分限制有效题数，不能原样使用。上游所谓 pyreadstat 写出 .rds 不适用；R 可用 saveRDS，跨软件可用 CSV 加代码本。"
+  },
+  {
+    "name": "power-analysis-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/statistics/power-analysis-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "08e82ea6f2440f44d1907885cacb9414e14563626e8f2a2e018474f899dec445",
+    "entry_sha256": "9124c5200ee103fa396a20d8e8d2cd392c2c4d59ddcb18e6ae167a6e6e62a5ca",
+    "license": "MIT (upstream)",
+    "local_path": "skills/power-analysis-guide",
+    "correction": "不套用中等效应或统一加 10–20%。小规模预测试不能稳定估计所有功效参数。复杂抽样的有效样本量近似不能替代针对实际设计的计算；功效足够不证明样本代表性。"
+  },
+  {
+    "name": "missing-data-handling",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/wrangling/missing-data-handling/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "745af38ff84905ca4cbe3643cfe56745808a370ae904c403c4665e8cfd7093e6",
+    "entry_sha256": "a8ce4cf1c09c847a98f4b1cd69df44d21b8c8264d132374e44557afcb8b5155a",
+    "license": "MIT (upstream)",
+    "local_path": "skills/missing-data-handling",
+    "correction": "上游逐个 t 检验不是 Little 的 MCAR 检验；不显著不能确立 MCAR，观测数据通常无法区分 MAR 和 MNAR。单次均值插补不能恢复推断不确定性；结构性跳题不默认插补。上游 pooling 示例未实现其注释所称的完整 Barnard–Rubin 小样本修正。"
+  },
+  {
+    "name": "hypothesis-testing-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/statistics/hypothesis-testing-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "95c1dc213434d346406bba8aae6a72df4788f6ac85889a3c7b4d6d2bbe8c9f73",
+    "entry_sha256": "e41ff467bdd386f915e84c72a941acf24f0793dce00f2761c4b0e9dc0a32738a",
+    "license": "MIT (upstream)",
+    "local_path": "skills/hypothesis-testing-guide",
+    "correction": "p 值不是零假设为真的概率；不显著不是相等，显著不是效应大或具有因果性。非参数检验也有设计和分布假设。"
+  },
+  {
+    "name": "sem-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/statistics/sem-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "a96656a70c7267e4ee38612ab6fd6d504ccd50d4ee51dbe9255024e814d0e013",
+    "entry_sha256": "53561873a79faff84a6bde7ca75fc2d6d4aa6dfd5d28cb71660df74496195018",
+    "license": "MIT (upstream)",
+    "local_path": "skills/sem-guide",
+    "correction": "不按固定 CFI/RMSEA 或 α 门槛宣告效度成立；不以同一数据反复删题后称为独立确认。横截面 SEM 的箭头或间接效应不能单独证明因果机制。"
+  },
+  {
+    "name": "causal-inference-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/econometrics/causal-inference-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "1a3b4474863ed23859d870b2418e5a959deb8200e983d672bae25f823103b2f3",
+    "entry_sha256": "af0dc2dff20c459f99f1223f49a1567bc52aa79873ab86910e7fe512da823869",
+    "license": "MIT (upstream)",
+    "local_path": "skills/causal-inference-guide",
+    "correction": "前趋势 p>0.05 不证明平行趋势。分期处理不默认使用普通 TWFE。上游 DiD/RDD/IV 代码是简化演示，存在聚类、首阶段控制与带宽问题；实际估计应使用核对过的实现。F>10 和过度识别检验通过不证明工具有效；RDD 不默认以运行变量标准差设带宽。"
+  },
+  {
+    "name": "panel-data-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/econometrics/panel-data-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "8de12f06f62f86ac01266a0f27882882cdc4f2094ab8060e310df5aa384ec7c9",
+    "entry_sha256": "ee8ec3c4a7cdda38ae39e9e8bceffaf6e0b22473be2ace41712029dedfa18034",
+    "license": "MIT (upstream)",
+    "local_path": "skills/panel-data-guide",
+    "correction": "Hausman 检验不应单独决定 FE/RE，也不自动验证因果性。个体 FE 不处理所有随时间变化的混杂；时间不变变量的主效应通常不能由个体 FE 识别。"
+  },
+  {
+    "name": "iv-regression-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/econometrics/iv-regression-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "3a2d8839e02918e9d53d900d08f2b5436cce9632594a415cc9de67d320cd7eff",
+    "entry_sha256": "70428fb49e2a74401f6d12e2d910fabe50bbb124372ba29636e3b4e31acfd75d",
+    "license": "MIT (upstream)",
+    "local_path": "skills/iv-regression-guide",
+    "correction": "F>10 不是通用强工具证明，Stock–Yogo 临界值不能无条件套到所有稳健统计量。过度识别不拒绝不证明排除限制；手工第二阶段 OLS 的常规标准误不适用。"
+  },
+  {
+    "name": "robustness-checks",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/econometrics/robustness-checks/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "af6d87f25285e56584eb6f9718db75921abe67d660662117b07cf8a07f55cdf0",
+    "entry_sha256": "cf4d3ccba691f94a7fe8fa6820c7a0ba2143d21f041a8ccbd677ca1c5cac2155",
+    "license": "MIT (upstream)",
+    "local_path": "skills/robustness-checks",
+    "correction": "逐步增加控制或所有 p 值显著不是稳健性的充分证据。不得循环搜索显著模型、隐藏失败结果或把稳健性当作识别假设的证明。"
+  },
+  {
+    "name": "stata-analyst-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/econometrics/stata-analyst-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "41165022f6abec311be8a1adb2d5a02a9ff08b992056b5f3ff52e0b405f78f16",
+    "entry_sha256": "2f01c8cf2463ac43ce87b9baea3eeb28bbb6a60458112041c5a901cbf25fd24f",
+    "license": "MIT (upstream)",
+    "local_path": "skills/stata-analyst-guide",
+    "correction": "不能把展示 do-file 当成已运行 Stata。软件命令成功不验证研究识别；不要根据显著性自动选择或删改变量。"
+  },
+  {
+    "name": "stata-data-cleaning",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/wrangling/stata-data-cleaning/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "a78bbc920589c6fc316b5973659e3a4dfade3430ee3309e3d20f9f4453592c6c",
+    "entry_sha256": "8cf2f8d91c9589b8b3ea5e54ce5aeb962f7cde59bf9efee5d8134cf787b797b7",
+    "license": "MIT (upstream)",
+    "local_path": "skills/stata-data-cleaning",
+    "correction": "Stata 数值缺失大于普通数值，age>60 会包含缺失，需显式限制。异常值不自动删除；不可为通过 isid 随意去重。"
+  },
+  {
+    "name": "text-mining-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/wrangling/text-mining-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "6cb1ec30060514541a890a07089e7a305837eb7e432ff0841164df76859982b5",
+    "entry_sha256": "22f87cd7b578b75115c7a05b2816d70587a3cfd7a575caac02885a31096efbb1",
+    "license": "MIT (upstream)",
+    "local_path": "skills/text-mining-guide",
+    "correction": "词频、情感词典、主题标签或余弦相似度不是构念效度本身；上游英文清洗和示范情感词表不能直接移植到中文社会学结论。"
+  },
+  {
+    "name": "network-visualization-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/dataviz/network-visualization-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "d63428cb1dd9df5030df8c01c1aeb92db311f0315cabde783d197a580c4882af",
+    "entry_sha256": "2bd2f763177206bbe43e10b3906f45366180c168e64c4fea17e2b1b33444eefc",
+    "license": "MIT (upstream)",
+    "local_path": "skills/network-visualization-guide",
+    "correction": "布局距离和社区颜色不直接代表真实社会距离或群体本体；引文中心性不等于学术质量，中心性也不自动等同权力。"
+  },
+  {
+    "name": "publication-figures-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/dataviz/publication-figures-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "b917df0581020f73ca97dbd1fa884b1ce79977238a2704bde4ce014fa4a36a82",
+    "entry_sha256": "0f1b1c1d0cf31226550c3e057c8c0650450eccb2496ba34ccf09b4da99681acf",
+    "license": "MIT (upstream)",
+    "local_path": "skills/publication-figures-guide",
+    "correction": "不虚构误差条，不把标准差、标准误与置信区间互换。上游尺寸和 DPI 是示例，投稿规范需逐次核对。"
+  },
+  {
+    "name": "meta-analysis-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/analysis/statistics/meta-analysis-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "09505cd273354f5931aaae8e42f59b9afd9282b6b3a9836d047a56798a2ab522",
+    "entry_sha256": "2ef53e5ecf0f1d5cb9bee1a5fea3274b09c11f811ca11601375a4dd433528f76",
+    "license": "MIT (upstream)",
+    "local_path": "skills/meta-analysis-guide",
+    "correction": "不以 I² 阈值机械选择固定/随机效应。小数量研究时漏斗图和 Egger 检验能力有限；显著合成效应不能消除原研究的偏倚或建立因果性。"
+  },
+  {
+    "name": "systematic-review-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/research/deep-research/systematic-review-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "1c784b696af9acb3ba730bdcdc7d585e6ef1f0a0603cb131227fb3af262dc959",
+    "entry_sha256": "ac1e5cc21d55d538fb4bc65209500253abd142ade71aedc9e779d442eb0a642d",
+    "license": "MIT (upstream)",
+    "local_path": "skills/systematic-review-guide",
+    "correction": "普通网页搜索不能默认称为穷尽的系统检索。PRISMA 是报告规范，不是研究质量认证；不要声称不存在未实际检索的研究。"
+  },
+  {
+    "name": "literature-review-writing",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/writing/composition/literature-review-writing/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "28d4d2b78252707636a7015353a2d6ea07c889168586734e14df23c01ed09fef",
+    "entry_sha256": "f6a947f963be9afbc10ca4d999c434319758bc1ca5ce967730410bb2665e7817",
+    "license": "MIT (upstream)",
+    "local_path": "skills/literature-review-writing",
+    "correction": "文献少不自动构成理论贡献；研究空白须限定检索范围。不能用模型记忆代替文献核查或虚构 DOI。"
+  },
+  {
+    "name": "qualitative-research-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/research/methodology/qualitative-research-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "4c26c43702b3f418d71c4674e9754ec66c0234662f7bbfd73bb4fa852f51352a",
+    "entry_sha256": "077953b243081db0aa2bd5059d5380f7631f7ea326c674d1574d630c165ec943",
+    "license": "MIT (upstream)",
+    "local_path": "skills/qualitative-research-guide",
+    "correction": "反思性主题分析不以编码者一致性或固定 κ 门槛为必要质量标准；主题不必是预设话题。扎根理论各流派的编码方式不同。不得声称尚未收集资料已达到饱和。"
+  },
+  {
+    "name": "scientific-writing-guide",
+    "kind": "adapted-upstream",
+    "source": "https://github.com/wentorai/research-plugins/blob/bf44b3cd617fa94c8a1b254c5d1987142ca3d631/skills/writing/composition/scientific-writing-guide/SKILL.md",
+    "upstream_commit": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+    "upstream_sha256": "9b85b8ef98295a0c408562d7674fb234cc9138377b1c4da2d30d736f296f4f3b",
+    "entry_sha256": "2468fea0b6c3b37045726208313d40f4f64baaaeb58815cf09979d5a8513cea1",
+    "license": "MIT (upstream)",
+    "local_path": "skills/scientific-writing-guide",
+    "correction": "润色不得改变统计含义、制造引文、填充虚构结果或隐藏不支持假设的发现。软件安装和投稿操作不是写作技能的默认动作。"
+  }
+]

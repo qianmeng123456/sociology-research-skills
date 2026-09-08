@@ -1,0 +1,17 @@
+{
+  "title": "校园活动经历与归属体验：设计演示",
+  "version": "0.1.0",
+  "status": "自编教学候选问卷；未实施认知访谈、预测试或效度验证，不可直接作为成熟量表",
+  "start": "C0",
+  "questions": [
+    {"id":"C0","variable":"consent","type":"single","wording":"了解研究说明后，您是否愿意自愿参与本次调查？","options":{"1":"愿意","0":"不愿意"},"missing":{},"next":{"1":"S1","0":"END"}},
+    {"id":"S1","variable":"eligible","type":"single","wording":"您是否已满18周岁，且目前是本校在读本科生？","options":{"1":"两项均符合","0":"至少一项不符合"},"missing":{"-99":"不愿回答"},"next":{"1":"E1","0":"END","-99":"END"}},
+    {"id":"E1","variable":"activity_any","type":"single","wording":"过去30天，您是否参加过本校学生社团、学生组织或学校部门组织的课外集体活动？不包括课堂教学、考核及个人自行锻炼。","options":{"1":"参加过","0":"没有参加"},"missing":{"-98":"记不清","-99":"不愿回答"},"next":{"1":"E2","0":"B1","-98":"B1","-99":"B1"}},
+    {"id":"E2","variable":"activity_days","type":"integer","wording":"过去30天，您大约有多少天参加过上述活动？同一天参加多次只算1天。","min":1,"max":30,"missing":{"-98":"记不清","-99":"不愿回答"},"next":{"*":"B1"}},
+    {"id":"B1","variable":"belong_accept","type":"single","wording":"回想过去30天在本校的经历，您在多大程度上感到自己被本校同学接纳？","options":{"1":"完全没有","2":"较少","3":"中等程度","4":"较多","5":"非常强烈"},"missing":{"-98":"无法判断","-99":"不愿回答"},"next":{"*":"B2"}},
+    {"id":"B2","variable":"belong_member","type":"single","wording":"回想过去30天在本校的经历，您在多大程度上感到自己是本校的一员？","options":{"1":"完全没有","2":"较少","3":"中等程度","4":"较多","5":"非常强烈"},"missing":{"-98":"无法判断","-99":"不愿回答"},"next":{"*":"B3"}},
+    {"id":"B3","variable":"belong_connection","type":"single","wording":"回想过去30天在本校的经历，您在多大程度上感到自己与本校同学有联系？","options":{"1":"完全没有","2":"较少","3":"中等程度","4":"较多","5":"非常强烈"},"missing":{"-98":"无法判断","-99":"不愿回答"},"next":{"*":"F1"}},
+    {"id":"F1","variable":"comment","type":"text","wording":"对于以上问题，哪些表述让您觉得难以理解或难以回答？可以留空，请不要填写姓名或联系方式。","missing":{},"next":{"*":"END"}}
+  ],
+  "scales": [{"id":"belonging_candidate","items":["B1","B2","B3"],"min":1,"max":5,"method":"mean","min_answered":3,"reverse":[],"status":"仅演示合成分配置；实质研究暂逐项报告，等待结构与效度验证"}]
+}

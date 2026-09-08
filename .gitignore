@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Machine-specific installation receipt (absolute personal paths)
+validation/installation.json
